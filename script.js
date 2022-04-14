@@ -1,3 +1,6 @@
-const h2 = document.createElement("h2");
-h2.textContent = "_____________________________";
-document.querySelector("body").appendChild(h2);
+const BASE_URL = "https://api.coingecko.com/"
+
+window.addEventListener('DOMContentLoaded', () =>{
+    getCoinValues()
+})
+
