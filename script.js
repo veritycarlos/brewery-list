@@ -6,14 +6,14 @@ window.addEventListener('DOMContentLoaded', () =>{
 
 function getCoinNameValues() { 
     const ul = document.getElementById("breweries-list")
-
-    fetch(BASE_URL + '/breweries')
-    .then(res => res.json())
+    fetch(BASE_URL + '/breweries') 
+    .then(res => res.json()) 
     .then(data => {
         data.forEach(breweries => {
             ul.innerHTML += `
-                <li>${breweries.name}</li>
+                <li><a href="#">${breweries.name}</a></li>
             `
         })
     })
 }
+
