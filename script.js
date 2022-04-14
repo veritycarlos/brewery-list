@@ -1,6 +1,19 @@
-const BASE_URL = "https://api.coingecko.com/"
+const BASE_URL = "https://api.openbrewerydb.org"
 
 window.addEventListener('DOMContentLoaded', () =>{
-    getCoinValues()
+    getCoinNameValues()
 })
 
+function getCoinNameValues() { 
+    const ul = document.getElementById("breweries-list")
+
+    fetch(BASE_URL + '/breweries')
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(breweries => {
+            ul.innerHTML += `
+                <li>${breweries.name}</li>
+            `
+        })
+    })
+}
