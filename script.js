@@ -9,11 +9,18 @@ function getCoinNameValues() {
     fetch(BASE_URL + '/breweries') 
     .then(res => res.json()) 
     .then(data => {
-        data.forEach(breweries => {
+        data.forEach(brewery => {
             ul.innerHTML += `
-                <li><a href="#">${breweries.name}</a></li>
-            `
+                <li><a href="#" data-id="${brewery.id}">${brewery.name}</a></li>
+            `        
         })
+        attachClicksToLinks()
     })
 }
 
+const attachClicksToLinks = () =>{
+    const breweries = document.querySelectorAll('a')
+    breweries.forEach((brewery) =>{
+        brewery.addEventListener('click', displayBrewery)
+    })
+}
