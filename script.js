@@ -2,10 +2,14 @@ const BASE_URL = "https://api.openbrewerydb.org"
 
 window.addEventListener('DOMContentLoaded', () =>{
     getCoinNameValues()
+    document.getElementById("breweries").addEventListener('click', getCoinNameValues)
 })
 
 function getCoinNameValues() { 
     const ul = document.getElementById("breweries-list")
+    const info = document.getElementById('info')
+    info.innerHTML = ""
+    ul.innerHTML = " "
     fetch(BASE_URL + '/breweries') 
     .then(res => res.json()) 
     .then(data => {
