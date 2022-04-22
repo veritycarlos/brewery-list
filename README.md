@@ -1,10 +1,10 @@
 # Brewery List
 
+## Description
+This website provides information about various United States breweries. 
 
 ## Contributers
 Verity Carlos <verity.carlos@gmail.com>
-
-## 
 
 
 
