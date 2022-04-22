@@ -68,7 +68,7 @@ const displayBrewery = (e) => {
         <p>${data.brewery_type}</p>
         <h3>Phone:</h3>
         <p>${phoneNotAvail()}</p>
-        <h3>URL</h3>
+        <h3>Website</h3>
         <p>${urlNotListed()}</p>`
     })
 }
