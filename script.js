@@ -30,6 +30,8 @@ const attachClicksToLinks = () =>{
     })
 }
 
+
+
 const displayBrewery = (e) => {
     console.log(e.target.dataset.id)
     const info = document.getElementById('info')
@@ -39,14 +41,37 @@ const displayBrewery = (e) => {
     .then(res => res.json())
     .then(data =>{
         console.log(data)
-        info.innerHTML = `<h2>${data.name}</h2>
+
+        const phoneNotAvail = () => {
+            if (data.phone === null) {
+                result = "not listed"
+            } else {
+            result = `${data.phone}`
+            }
+            return result
+        }
+
+        // const not = () => {
+        //     if (data.phone === null) {
+        //         result = "not listed"
+        //     } else {
+        //     result = `${data.phone}`
+        //     }
+        //     return result
+        // }
+
+        info.innerHTML = 
+        `<h2>${data.name}</h2>
         <h3>City:</h3>
         <p>${data.city}</p>
         <h3>Type:</h3>
         <p>${data.brewery_type}</p>
         <h3>Phone:</h3>
-        <p>${data.phone}</p>
+        <p>${phoneNotAvail()}</p>
         <h3>URL</h3>
         <p>${data.website_url}</p>`
     })
 }
+
+// <h3>Phone:</h3>
+// <p>${data.phone}</p>
