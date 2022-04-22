@@ -51,14 +51,14 @@ const displayBrewery = (e) => {
             return result
         }
 
-        // const not = () => {
-        //     if (data.phone === null) {
-        //         result = "not listed"
-        //     } else {
-        //     result = `${data.phone}`
-        //     }
-        //     return result
-        // }
+        const urlNotListed = () => {
+            if (data.website_url === null) {
+                result = "not listed"
+            } else {
+            result = `${data.website_url}`
+            }
+            return result
+        }
 
         info.innerHTML = 
         `<h2>${data.name}</h2>
@@ -69,9 +69,10 @@ const displayBrewery = (e) => {
         <h3>Phone:</h3>
         <p>${phoneNotAvail()}</p>
         <h3>URL</h3>
-        <p>${data.website_url}</p>`
+        <p>${urlNotListed()}</p>`
     })
 }
 
-// <h3>Phone:</h3>
+
 // <p>${data.phone}</p>
+// <p>${data.website_url}</p>//
