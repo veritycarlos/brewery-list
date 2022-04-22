@@ -40,6 +40,9 @@ body {
   }
   button {
     padding: 10px;
+    font-size: 15px;
+    margin-left: 70px;
+
   }
   h3 {
     margin: 10px;
