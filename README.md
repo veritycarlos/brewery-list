@@ -1,4 +1,8 @@
 # crypto-exchange
+
+## Contributers
+Verity Carlos <verity.carlos@gmail.com>
+
 Description of app.
 
 url of the repo.

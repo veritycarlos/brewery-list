@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     document.getElementById("breweries").addEventListener('click', getBreweries)
 })
 
+
 function getBreweries() { 
     const ul = document.getElementById("breweries-list")
     const info = document.getElementById('info')
