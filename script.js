@@ -1,15 +1,15 @@
 const BASE_URL = "https://api.openbrewerydb.org"
 
 window.addEventListener('DOMContentLoaded', () =>{
-    getCoinNameValues()
-    document.getElementById("breweries").addEventListener('click', getCoinNameValues)
+    getBreweries()
+    document.getElementById("breweries").addEventListener('click', getBreweries)
 })
 
-function getCoinNameValues() { 
+function getBreweries() { 
     const ul = document.getElementById("breweries-list")
     const info = document.getElementById('info')
-    info.innerHTML = ""
-    ul.innerHTML = " "
+    info.innerText = ""
+    ul.innerText = " "
     fetch(BASE_URL + '/breweries') 
     .then(res => res.json()) 
     .then(data => {
@@ -33,12 +33,12 @@ const displayBrewery = (e) => {
     console.log(e.target.dataset.id)
     const info = document.getElementById('info')
     const ul = document.getElementById("breweries-list")
-    ul.innerHTML = ''
+    ul.innerText = ''
     fetch(BASE_URL + `/breweries/${e.target.dataset.id}`)
     .then(res => res.json())
     .then(data =>{
         console.log(data)
-        info.innerHTML = `<h1>${data.name}</h1>
+        info.innerHTML = `<h2>${data.name}</h2>
         <h3>City:</h3>
         <p>${data.city}</p>
         <h3>Type:</h3>

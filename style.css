@@ -1,3 +1,56 @@
 body {
-    background: tan;
+    background: whitesmoke;
   }
+  footer {
+    position: fixed;
+    text-align: right;
+    bottom: 10px;
+    right: 10px
+  }
+  h1 {
+    margin:auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    /* width: 50%; */
+    border: 3px solid black;
+    padding: 20px;  
+  }
+  h2 {
+    margin: 20px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    width: 50%;
+    /* border: 3px solid black; */
+    padding: 20px;  
+    text-decoration: underline;
+  }
+  li {
+    padding: 10px
+  }
+  ul {
+    padding-left: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  button {
+    padding: 10px;
+  }
+  h3 {
+    margin: 10px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    /* width: 50%; */
+    /* border: 3px solid black; */
+    padding-left: 40px; 
+  }
+p {
+  margin: 10px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  /* width: 50%; */
+  /* border: 3px solid black; */
+  padding-left: 50px; 
+}
