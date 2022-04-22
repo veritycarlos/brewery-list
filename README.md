@@ -3,6 +3,11 @@
 ## Description
 This website provides information about various United States breweries. 
 
+![website image](readmepic.png)
+
+## Site URL
+[siteurl](https://veritycarlos.github.io/brewery-list/)
+
 ## Contributers
 Verity Carlos <verity.carlos@gmail.com>
 
