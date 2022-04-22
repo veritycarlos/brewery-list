@@ -63,6 +63,7 @@ const displayBrewery = (e) => {
         info.innerHTML = 
         `<h2>${data.name}</h2>
         <h3>State:</h3>
+        <p>${data.state}</p>
         <h3>City:</h3>
         <p>${data.city}</p>
         <h3>Type:</h3>
