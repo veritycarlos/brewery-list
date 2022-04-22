@@ -17,13 +17,6 @@ Brewery List allows users to click on the name of a brewery, which takes the use
 ## Contributers
 Verity Carlos <verity.carlos@gmail.com>
 
-
-
-
-
-
-
-how to run it.
-
-GIPH of how it works. 
+## Credits
+[breweries_api](https://api.openbrewerydb.org/breweries)
 
